@@ -4,22 +4,26 @@ body {
   font-size: 16px;
 }
 ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: inherit;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 h1,
 h2,
 h3,
+h4,
 p {
-  margin: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
 }
 button {
   cursor: pointer;
