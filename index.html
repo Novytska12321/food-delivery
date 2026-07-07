@@ -58,24 +58,73 @@
             </p>
             <button type="button" class="hero-button">Order Now</button>
           </div>
-          <img
-            src="./images/salat.png"
-            alt="salat"
-            width="528"
-            class="hero-img"
-          />
+          <div class="hero-img-wrap">
+            <img
+              src="./images/humus-tab-min.png"
+              srcset="
+                ./images/humus-tab-min.png    1x,
+                ./images/humus-tab@2x-min.png 2x
+              "
+              alt="humus with falafel"
+              width="292"
+              height="292"
+              class="hero-img"
+            />
+            <button
+              type="button"
+              class="hero-arrow hero-arrow-prev"
+              aria-label="Previous slide"
+            >
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+                <path
+                  d="M8 1L2 8l6 7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="hero-arrow hero-arrow-next"
+              aria-label="Next slide"
+            >
+              <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+                <path
+                  d="M2 1l6 7-6 7"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <!-- ======SECTION 2======-->
       <section class="about" id="about">
         <div class="container about-container">
-          <img
-            src="./images/aple-mob-min.png"
-            alt="apple"
-            width="396"
-            class="about-img"
-          />
+          <div class="about-img-wrap">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/aple-tab-min.png    1x,
+                  ./images/aple-tab@2x-min.png 2x
+                "
+              />
+              <img
+                src="./images/aple-mob-min.png"
+                srcset="./images/aple-mob@2x-min.png 2x"
+                alt="apple"
+                width="280"
+                class="about-img"
+              />
+            </picture>
+          </div>
           <div class="about-wrap">
             <h2 class="about-title">What’s Special About Our Offerings</h2>
             <p class="about-text">
@@ -89,8 +138,10 @@
                   class="about-icon"
                   src="./images/icons/delivery.img.svg"
                   alt="delivery icon"
+                  width="48"
+                  height="48"
                 />
-                <h3 class="about-subtitle">Fasest Delivery</h3>
+                <h3 class="about-subtitle">Fasterst Delivery</h3>
                 <p class="about-text">
                   Our advanced logistics system and dedicated delivery partners
                   ensure that your meals are delivered to you within 30-minutes.
@@ -99,8 +150,10 @@
               <li class="about-item">
                 <img
                   class="about-icon"
-                  src="./images/icons/Vector (finger).png"
+                  src="./images/icons/order.img.svg"
                   alt="finger icon"
+                  width="48"
+                  height="48"
                 />
                 <h3 class="about-subtitle">Easy To Order</h3>
                 <p class="about-text">
@@ -110,7 +163,30 @@
                 </p>
               </li>
             </ul>
-            <button class="about-button" type="button">Order Now</button>
+            <div class="about-buttons">
+              <button class="about-button about-button-order" type="button">
+                Order Now
+              </button>
+              <button class="about-button about-button-read-more" type="button">
+                Read More
+                <svg
+                  class="about-button-chevron"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5 3l4 4-4 4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -123,38 +199,81 @@
             <li class="favorites-item">
               <img
                 src="./images/gamburger-mob-min.png"
+                srcset="
+                  ./images/gamburger-mob-min.png     315w,
+                  ./images/gamburger-mob@2x-min.png  630w,
+                  ./images/gamburger-tab-min.png     268w,
+                  ./images/gamburger-tab@2x-min.png  536w
+                "
+                sizes="(min-width: 768px) 268px, 315px"
                 alt="gamburger"
                 width="315"
               />
             </li>
             <li class="favorites-item">
-              <img src="./images/Pasta-mob-min.png" alt="pasta" width="315" />
-            </li>
-            <li class="favorites-item">
-              <img src="./images/pizza-mob-min.png" alt="pizza" width="315" />
-            </li>
-            <li class="favorites-item">
               <img
-                src="./images/chicken-min.png"
-                alt="chicken"
+                src="./images/Pasta-mob-min.png"
+                srcset="
+                  ./images/Pasta-mob-min.png     315w,
+                  ./images/Pasta-mob@2x-min.png  630w,
+                  ./images/Pasta-tab-min.png     268w,
+                  ./images/Pasta-tab@2x-min.png  536w
+                "
+                sizes="(min-width: 768px) 268px, 315px"
+                alt="pasta"
                 width="315"
-                class="big-favorites-img"
               />
             </li>
             <li class="favorites-item">
               <img
-                src="./images/fish.png"
-                alt="fish"
+                src="./images/pizza-mob-min.png"
+                srcset="
+                  ./images/pizza-mob-min.png     315w,
+                  ./images/pizza-mob@2x-min.png  630w,
+                  ./images/pizza-tab-min.png     268w,
+                  ./images/pizza-tab@2x-min.png  536w
+                "
+                sizes="(min-width: 768px) 268px, 315px"
+                alt="pizza"
                 width="315"
-                class="big-favorites-img"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/chicken-tab-min.png"
+                srcset="
+                  ./images/chicken-tab-min.png     268w,
+                  ./images/chicken-tab@2x-min.png  536w
+                "
+                sizes="(min-width: 768px) 268px, 260px"
+                alt="chicken"
+                width="268"
+              />
+            </li>
+            <li class="favorites-item">
+              <img
+                src="./images/fish-tab-min.png"
+                srcset="
+                  ./images/fish-tab-min.png     268w,
+                  ./images/fish-tab@2x-min.png  536w
+                "
+                sizes="(min-width: 768px) 268px, 260px"
+                alt="fish"
+                width="268"
               />
             </li>
             <li class="favorites-item">
               <img
                 src="./images/borshch-min.png"
+                srcset="
+                  ./images/borshch-min.png         315w,
+                  ./images/borshch@2x-min.png      630w,
+                  ./images/borshch-desk-min.png    268w,
+                  ./images/borshch-desk@2x-min.png 536w
+                "
+                sizes="(min-width: 768px) 268px, 315px"
                 alt="borshch"
                 width="315"
-                class="big-favorites-img"
               />
             </li>
           </ul>
@@ -266,21 +385,54 @@
 </div>
  </footer> 
     <!-- ========BACKDROP======= -->
-    <!-- <div class="backdrop">
+     <div class="backdrop">
     <div class="modal">
-        <button type="button" class="modal-close-btn">
-            <svg class="modal-close-icon">
-                <use></use>
-            </svg>
-        </button>
+      <button type="button" class="modal-close-btn">
+        <img src="./images/icons/Frame 17.svg" alt="close icon" width="28" height="28">
+    </button>
         <p class="modal-title">Order Form</p>
-        <form>
-            <div class="modal-field"><label for="" class="modal-label"></label><input type="text" class="modal-input"></div>
-            <div class="modal-field"><label for="" class="modal-label"></label><input type="text" class="modal-input"></div>
-            <div class="modal-field"><label for="" class="modal-label"></label><input type="text" class="modal-input"></div>
-            <button class="modal-send-btn"></button>
-        </form>
+<form>
+    <div class="modal-field">
+        <label for="name" class="modal-label">Name</label>
+        <input id="name" type="text" class="modal-input" placeholder="Your name">
     </div>
- </div> -->
+    <div class="modal-field">
+        <label for="phone" class="modal-label">Phone number</label>
+        <input id="phone" type="tel" class="modal-input" placeholder="+38(0__) ___ __ __">
+    </div>
+    <div class="modal-field">
+        <label for="email" class="modal-label">E-mail</label>
+        <input id="email" type="email" class="modal-input" placeholder="example@gmail.com">
+    </div>
+    <button class="modal-send-btn" type="submit">Send</button>
+</form>
+    </div>
+ </div> 
+
+ <!-- ========Burger menu======= -->
+ <div class="burger-menu">
+  <div class="burger-menu-content">
+    <div class="burger-menu-top">
+      <a class="burger-menu-link" href="#home">Home</a>
+      <button class="burger-menu-close-btn" type="button">
+        <img src="./images/icons/Frame 17.svg" alt="close icon" width="28" height="28">
+      </button>
+    </div>
+    <ul class="burger-menu-list">
+      <li class="burger-menu-item">
+        <a class="burger-menu-link" href="#about">About</a>
+      </li>
+      <li class="burger-menu-item">
+        <a class="burger-menu-link" href="#service">Service</a>
+      </li>
+      <li class="burger-menu-item">
+        <a class="burger-menu-link" href="#menu">Menu</a>
+      </li>
+      <li class="burger-menu-item">
+        <a class="burger-menu-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+ </div>
   </body>
 </html>
